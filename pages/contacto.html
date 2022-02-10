@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOLIATH - Tienda tecnológica</title>
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+
+<body>
+    <header>
+        <img src="../img/logo.png" class="logo" alt="Logo del sitio">
+        <nav>
+            <ul class="menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./productos.html">Productos</a>
+                    <ul class="submenu">
+                        <li><a href="./accesorios.html">Accesorios</a></li>
+                        <li><a href="./notebooks.html">Notebooks</a></li>
+                    </ul>
+                </li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="centrado animate__animated animate__flipInX">
+        <h1>Contacto</h1>
+            <form>
+                <div class="etiqueta">
+                    <label for="nombre">Nombre completo:</label>
+                </div>
+                    <input class="campo" type="text" id="nombre" name="nombre" placeholder="Escribe tú nombre completo">
+                <div class="etiqueta">
+                    <label for="email">Correo electrónico:</label>
+                </div>
+                    <input class="campo" type="email" id="correo" name="correo" placeholder="Ingresa tú correo electrónico">
+                <div class="etiqueta">
+                    <label for="mensaje">Escribe tú mensaje</label>
+                </div>
+                    <textarea  class="campo mensaje" id="mensaje" name="mensaje"></textarea>
+                <br><br>
+                <div class="botonContenedor">
+                    <input class="boton" type="submit" value="Enviar">
+                    <input class="boton" type="reset" value="Borrar">
+                </div>
+            </form>
+    </section>
+    
+    <footer>
+        <section>
+            <a href="www.facebook.com"><img src="../img/facebook.png" width="3%" alt="Botón a red social facebook"></a>
+            <a href="www.twitter.com"><img src="../img/twitter.png" width="3%" alt="Botón a red social twitter"></a>
+            <a href="www.youtube.com"><img src="../img/youtube.png" width="3%" alt="Botón a red social youtube"></a>
+        </section>
+
+        <p>Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>

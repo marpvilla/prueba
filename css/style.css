@@ -1,0 +1,373 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Calibri', sans-serif;
+}
+
+body {
+    display: grid;
+    grid-template-areas:
+    "cabeza"
+    "principal" 
+    "pie";
+    grid-template-rows: 22% auto 120px;
+    background-color: #fefae0;
+    width: 100%;
+    height: 100vh;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Baloo Bhaijaan 2', cursive;
+  color: #d4a373;
+}
+
+.logo {
+    display: block;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    width: 10%;
+}
+
+/*GRID AREAs*/
+
+header {
+    grid-area: cabeza;
+}
+
+nav {
+    grid-area: menu;
+}
+
+main {
+    grid-area: principal;
+}
+
+footer {
+    grid-area: pie;
+}
+
+/*GRIDs*/
+
+.gridImg {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.gridsubs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.subsflex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Propiedades del menú*/
+
+.navegacion {
+    align-content: center;
+    text-align: center;
+}
+
+.menu {    
+    background-color: #d4a373;
+}
+
+.menu li { 
+    display: inline-block;
+    position: relative;
+  }
+
+.menu li a { 
+    text-decoration: none;
+    color: black;
+  }
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: -2px;
+    background-color: #d4a373;
+    z-index: 1;
+  }
+  
+ul li:hover .submenu{
+    display: block;
+  }
+
+li {
+    width: 100px;
+    height: 30px;
+    border-radius: 3px;
+    margin: 2px;
+    padding: 5px;
+    color: #d3d3d3;
+    list-style-type: none;
+  }
+
+li:hover{
+    background-color: #faedcd;
+    color: black;
+  }
+
+.activo {
+    background-color: #faedcd; 
+  }
+
+/*Propiedades del cuerpo*/
+
+h2 {
+    margin-top: 5px;
+}
+
+.centrado {
+    text-align: center;
+}
+
+article {
+    width: 100%;
+}
+
+article p {
+    text-align: justify;
+    margin: 0% 2% 10px 2%;
+}
+
+.textoCuadrado {
+    margin: 2% 30% 2% 30%;
+}
+
+.imgHome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.imgHome img {    
+    width: 15%;
+    margin: 5px;
+}
+
+div h2 {
+    text-align: center;
+}
+
+.subs1 {
+    width: 100%;
+    display: inline-block;
+
+}
+
+div p {
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.imgProd {
+    width: 70%;
+}
+/*.subs2 {
+    width: 45%;
+    float: left;
+    text-align: justify;
+    margin-left: 30px; 
+}
+
+.subs3 {
+    width: 45%;
+    float: right;
+    text-align: justify;
+    margin-right: 30px;
+}*/
+
+/*Propiedades de video*/
+
+iframe {
+    width: 560px;
+    height: 315px;
+}
+
+/*Propiedades productos*/
+
+.productos {
+    display: inline-block;
+}
+
+.productos img {
+    width: 150px;
+}
+
+.prodDistancia {
+    margin: 10px;
+}
+
+/*Propiedades del formualrio*/
+
+form {
+    display: inline-block;
+}
+
+.etiqueta {
+    text-align: left;
+    margin-top: 8px;
+}
+
+.campo {
+    width: 400px;
+}
+
+.mensaje {
+    height: 100px;
+}
+
+.boton {
+    width: 100px;
+    background-color: #d4a373;
+}
+
+.boton:hover {
+    background-color: #faedcd;
+    color: black;
+}
+
+/*Propiedades del pie*/
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    background-color: #d4a373;
+    padding: 8px;
+}
+
+footer p {
+    margin-top: 10px;
+    color: #faedcd;
+}
+
+footer img {
+    width: 45px;
+}
+
+/*ANIMACIONES Y DEMÁS*/
+
+.tilt-in-top-1 {
+	-webkit-animation: tilt-in-top-1 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: tilt-in-top-1 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.shadow-pop-tr:hover {
+    -webkit-animation: shadow-pop-tr 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+    animation: shadow-pop-tr 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
+
+ /*Gradiente*/
+
+.gradi {
+    transition: all 2s;
+}
+
+.gradi:hover {
+    background-image: linear-gradient(315deg, #f39f86 0%, #f9d976 74%);
+}
+
+/*MEDIA QUERIEs*/
+
+/* Desktop */
+@media (min-width: 1024px) {
+    body {
+        width: 100%;
+        height: 100vh;
+    }
+    h1 {
+        margin-top: -20px;
+    }
+}
+
+/* Tablets */
+@media (min-width: 576px) and (max-width: 1023px) {
+    body {
+        width: 100%;
+        height: 100vh;
+    }
+    .logo {
+        display: block;
+        margin-top: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5px;
+        width: 20%;
+    }
+    h1 {
+        margin-top: -3px;
+    }
+    iframe {
+        width: 400px;
+        height: 260px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 575px) {
+    .logo {
+        display: block;
+        margin-top: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5px;
+        width: 20%;
+    }
+    body {
+        width: 100%;
+        height: 100vh;
+        grid-template-rows: px auto 10px;
+    }
+    h1 {
+        margin-top: -32px;
+    }
+    iframe {
+        width: 300px;
+        height: 200px;
+    }
+}
+/* ----------------------------------------------
+ * Generated by Animista on 2022-1-31 10:55:2
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation tilt-in-top-1
+ * ----------------------------------------
+ */
+ @-webkit-keyframes tilt-in-top-1 {
+    0% {
+      -webkit-transform: rotateY(30deg) translateY(-300px) skewY(-30deg);
+              transform: rotateY(30deg) translateY(-300px) skewY(-30deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotateY(0deg) translateY(0) skewY(0deg);
+              transform: rotateY(0deg) translateY(0) skewY(0deg);
+      opacity: 1;
+    }
+  }
+  @keyframes tilt-in-top-1 {
+    0% {
+      -webkit-transform: rotateY(30deg) translateY(-300px) skewY(-30deg);
+              transform: rotateY(30deg) translateY(-300px) skewY(-30deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotateY(0deg) translateY(0) skewY(0deg);
+              transform: rotateY(0deg) translateY(0) skewY(0deg);
+      opacity: 1;
+    }
+  }
